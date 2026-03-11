@@ -1,7 +1,5 @@
 <!DOCTYPE HTML>
-
 <!-- David Aiken  -->
-
 <html lang="en">
 <head>
     <title>Tree of Life</title>
@@ -9,22 +7,33 @@
 <style>
     *{margin:0; padding:0; box-sizing: border-box;}
     body{
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-right: auto;
-    margin-left: auto;}
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: auto;
+        margin-left: auto;}
     .backgroundColor{background-color: rgb(129, 184, 129);}
     h1{text-align: center;}
     main{text-align: center;}
     .flexContainer {
-    flex-direction: row;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 0.2rem solid yellow;
-    border-radius: 10px;
-    margin: 1rem;
-    padding: 1rem;}
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 0.2rem solid black;
+        border-radius: 10px;
+        margin: 1rem;
+        padding: 1rem;}
+    .imageArea{
+        transition: 0.5s;}
+    .imageArea:hover{
+        transform: scale(1.1);
+    }
+
+    @media (max-width: 800px) {
+    .flexContainer {
+        flex-direction: column;}
+    .navContainer{flex-direction: column;}
+    }
 </style>
 </head>
 
@@ -32,8 +41,22 @@
 <h1>Tree of Life Creations</h1>
     <main>
         Welcome to Tree of Life Creations. Please enjoy this gallery containing some examples of my work.
+        <br><br>
 
-        <img src="" alt="practice" style="width:300px;height:200px;">
+        <div class="flexContainer"><div class="imageArea">
+            <img src="1.jpg" alt="practice" style="width: 200px; height:auto"></div></div>
+        <div class="flexContainer"><div class="imageArea">
+            <img src="2.jpg" alt="practice" style="width: 200px; height:auto"></div></div>
+        <div class="flexContainer"><div class="imageArea">
+            <img src="3.jpg" alt="practice" style="width: 200px; height:auto"></div></div>
+        <div class="flexContainer"><div class="imageArea">
+            <img src="4.png" alt="practice" style="width: 200px; height:auto"></div></div>
+        <div class="flexContainer"><div class="imageArea">
+            <img src="5.png" alt="practice" style="width: 200px; height:auto"></div></div>
+        <div class="flexContainer"><div class="imageArea">
+            <img src="6.png" alt="practice" style="width: 200px; height:auto"></div></div>
+        <div class="flexContainer"><div class="imageArea">
+            <img src="7.png" alt="practice" style="width: 200px; height:auto"></div></div>
     </main>
 
 </body>
