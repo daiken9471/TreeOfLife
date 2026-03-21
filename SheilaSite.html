@@ -4,6 +4,7 @@
 <head>
     <title>Tree of Life</title>
     <meta charset= "utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
     *{margin:0; padding:0; box-sizing: border-box;}
     body{
@@ -14,54 +15,111 @@
     .backgroundColor{background-color: rgb(129, 184, 129);}
     h1{text-align: center;}
     main{text-align: center;}
+
+    footer{
+        text-align: center;
+        padding: 20px;
+    }
+
+    .blueText{color:blue}
+
     .flexContainer {
         flex-direction: row;
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 0.2rem solid black;
+        border: 0.2rem solid aquamarine;
         border-radius: 10px;
         margin: 1rem;
         padding: 1rem;}
+    
     .imageArea{
         transition: 0.5s;}
     .imageArea:hover{
         transform: scale(1.1);
     }
 
-    @media (max-width: 800px) {
-    .flexContainer {
-        flex-direction: column;}
-    .navContainer{flex-direction: column;}
+    .galleryContainer {
+    display: grid;
+    grid-template-areas:
+        'galleryImage1 galleryImage2 galleryImage3'
+        'galleryImage4 galleryImage5 galleryImage6';
+    gap: 10px;
+    padding: 10px;}
+
+    .rotate{
+        transform: rotate(270deg);
     }
+
+    @media only screen and (max-width: 600px) { /*phone*/
+        .galleryImage1 {grid-area: 1 / span 1;}
+        .galleryImage2 {grid-area: 2 / span 1;}
+        .galleryImage3 {grid-area: 3 / span 1;}
+        .galleryImage4 {grid-area: 4 / span 1;}
+        .galleryImage5 {grid-area: 5 / span 1;}
+        .galleryImage6 {grid-area: 6 / span 1;}}
+    
+    @media only screen and (min-width: 600px) { /*tablet*/
+        .galleryImage1 {grid-area: 1 / span 1;}
+        .galleryImage2 {grid-area: 1 / span 1;}
+        .galleryImage3 {grid-area: 2 / span 1;}
+        .galleryImage4 {grid-area: 2 / span 1;}
+        .galleryImage5 {grid-area: 3 / span 1;}
+        .galleryImage6 {grid-area: 3 / span 1;}}    
+
+    @media only screen and (min-width: 768px) { /*laptop and computer*/
+        .galleryImage1 {grid-area: 1 / span 1;}
+        .galleryImage2 {grid-area: 1 / span 1;}
+        .galleryImage3 {grid-area: 1 / span 1;}
+        .galleryImage4 {grid-area: 2 / span 1;}
+        .galleryImage5 {grid-area: 2 / span 1;}
+        .galleryImage6 {grid-area: 2 / span 1;}}
+    
+    
 </style>
 </head>
 
 <body class="backgroundColor">
 <h1>Tree of Life Creations</h1>
     <main>
-        Welcome to Tree of Life Creations. Please enjoy this gallery containing some examples of my work.
-        <br><br>
+        <br>
+        <br>
+        <p>Welcome to Tree of Life Creations! Please enjoy this gallery containing some examples of my work.</p>
+        <br>
+        
+        <div class="galleryContainer">       
 
-        <div class="flexContainer"><div class="imageArea">
-            <img src="1.jpg" alt="practice" style="width: 200px; height:auto"></div></div>
-        <div class="flexContainer"><div class="imageArea">
-            <img src="2.jpg" alt="practice" style="width: 200px; height:auto"></div></div>
-        <div class="flexContainer"><div class="imageArea">
-            <img src="3.jpg" alt="practice" style="width: 200px; height:auto"></div></div>
-        <div class="flexContainer"><div class="imageArea">
-            <img src="4.png" alt="practice" style="width: 200px; height:auto"></div></div>
-        <div class="flexContainer"><div class="imageArea">
-            <img src="5.png" alt="practice" style="width: 200px; height:auto"></div></div>
-        <div class="flexContainer"><div class="imageArea">
-            <img src="6.png" alt="practice" style="width: 200px; height:auto"></div></div>
-        <div class="flexContainer"><div class="imageArea">
-            <img src="7.png" alt="practice" style="width: 200px; height:auto"></div></div>
+        <div class="galleryImage1"><div class="flexContainer"><div class="imageArea">
+            <img src="1.jpg" alt="practice" style="width: 200px; height:auto"></div></div></div>      
+        
+        <div class="galleryImage2"><div class="flexContainer"><div class="imageArea">
+            <img src="2.jpg" alt="practice" style="width: 200px; height:auto"></div></div></div>
+        
+        <div class="galleryImage3"><div class="flexContainer"><div class="imageArea">
+            <img src="3.jpg" alt="practice" style="width: 200px; height:auto"></div></div></div>
+        
+        <div class="galleryImage4"><div class="flexContainer"><div class="imageArea">
+            <img src="4.png" alt="practice" style="width: 200px; height:auto"></div></div></div>
+        
+        <div class="galleryImage5"><div class="flexContainer"><div class="imageArea">
+            <img src="5.png" alt="practice" style="width: 200px; height:auto"></div></div></div>
+        
+        <div class="galleryImage6"><div class="flexContainer"><div class="imageArea">
+            <img src="6.png" alt="practice" style="width: 200px; height:auto"></div></div></div>      
+        
+        </div>
     </main>
 
 </body>
 
+<footer>
+    <h4>
+        I would love to make something just for you.         
+        <br>
+        <p><em><a href="mailto:countrygirlat54@yahoo.com" style="color:blue">Click here to contact me!</em></a></p>
+    </h4>
 
+</footer>
 
 
 
