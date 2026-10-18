@@ -16,6 +16,22 @@
     h1{text-align: center;}
     main{text-align: center;}
 
+    .backgroundImage{
+  /* Specify the path to your image file */
+  background-image: url('images/geode_background.jpg');
+  /* Prevent the image from repeating like a tile */
+  background-repeat: no-repeat;
+  /* Center the background image horizontally and vertically */
+  background-position: center center;
+  /* Lock the image in place within the viewport so it doesn't scroll */
+  background-attachment: fixed;
+  /* Scale the image proportionally to stretch and fill the entire screen */
+  background-size: cover;  
+  /* Ensure the body expands to fill at least the full window height */
+  min-height: 100vh;
+  margin: 0;
+    }
+
     footer{
         text-align: center;
         padding: 20px;
@@ -105,12 +121,12 @@
 </style>
 </head>
 
-<body class="backgroundColor">
+<body class="backgroundImage">
 <h1>Majestic, Magical Art</h1>
     <main>
         <br>
         <br>
-        <p>Welcome Majestic, Magical Art! Please enjoy this gallery containing some examples of my work.</p>
+        <p>Welcome to Majestic, Magical Art! Please enjoy this gallery containing some examples of my work.</p>
         <br>
         
         <div class="galleryContainer">       
